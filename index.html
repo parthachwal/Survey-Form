@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formual 1 Survey Form</title>
+      <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 id="title"> Formula 1 Survey Form</h1>
+   <p id="description">Tell us about your F1 passion!</p>
+  <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+   <fieldset>
+     <div>
+      <label for="name">
+        Full name: 
+        <input type="text" required id="name" placeholder="John Smith"/>
+      </label>
+      </div>
+      <div>
+      <label for="email-label">
+        Email:
+        <input type="email" required placeholder="johnsmith@gmail.com" id="email">
+        </label>
+        </div>
+        <div>
+        <label for="number-label">
+          Age:
+          <input id="number" type="number" name="age" min="1" max="120" placeholder="18" required>
+        </label>
+        </div>
+</fieldset>
+<fieldset>
+  <div>
+  <label for="dropdown">
+    Who is your favorite team?
+    <select id="dropdown" name="dropdown" required>
+      <option value="">(select one)</option>
+      <option value="1">Red Bull</option>
+      <option value="2">Mercedes</option>
+      <option value="3">Ferrari</option>
+      <option value="4">McLaren</option>
+      <option value="5">Aston Martin</option>
+      <option value="6">Haas</option>
+      <option value="7">Alpine</option>
+      <option value="8">Williams</option>
+      <option value="9">Visa Cash App RB</option>
+      <option value="10">Kick Sauber</option>
+      </select>
+  </label>
+  </div>
+  <div>
+  <p>What type of races do you prefer?</p>
+  <label for="day">
+    <input type="radio" id="day" value="1" name="type-of-day" checked class="inline">Day
+    </label>
+   <label for="night"><input type="radio" id="Night" value="2" name="type-of-day" class="inline">Night</label>
+   </div>
+   <br>
+   <div>
+     <label for="drivers">
+       Which drivers will get a maiden podium this season?
+       <br>
+       (Check all that apply)
+     </label>
+     <ul id="drivers" style="list-style:none;">
+       <li><input name="driver" value="1" type="checkbox" class="check" >Nico Hulkenberg</li>
+       <li><input name="driver" value="2" type="checkbox" class="check">Zhou Guanyu</li>
+       <li><input name="driver" value="3" type="checkbox" class="check">Yuki Tsunoda</li>
+         <li><input name="driver" value="3" type="checkbox" class="check">Logan Sargeant</li>
+         <li><input name="driver" value="4" type="checkbox" class="check">None</li>
+      </ul>
+
+<label for="textarea">
+  What do wish the F1 would improve upon?
+  <textarea required id="textarea" name="textarea" rows="3" cols="30" placeholder="Better officiating"></textarea>
+</fieldset>
+
+<input type="submit" id="submit">
+
+
+
+        
+          
+
+  </form>
+   
+
+
+
+    
+</body>
+</html>
